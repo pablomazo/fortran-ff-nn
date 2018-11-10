@@ -13,7 +13,7 @@ write(10,*) npoints
 do i=1, npoints
    inp = i * step + min_v
    output = func(inp)
-   write(10,*) -inp, output
+   write(10,*) inp, output
 enddo
 
 endprogram
