@@ -55,9 +55,8 @@ call RANDOM_NUMBER(b2)
 
 open(10,file='output_values',status='replace')
 write(10,*) '# Input, output, target'
-open(11,file='mse', status='replace')
-write(11,*) '# Epoch | MSE'
 open(12,file='NN_param', status='replace')
+write(*,*) '# Epoch | MSE'
 do epoch=1,maxepochs
 ! Forward pass:
 call step(ndata, inp_s, h1_s,     input_data, h1,     w1, b1, dsig1, .TRUE.)
@@ -65,7 +64,7 @@ call step(ndata, h1_s,  output_s, h1,         output, w2, b2, dsig2, .FALSE.)
 
 ! Calculate derivative of error:
 call get_mse(ndata, output_s, output, targ, mse, mse_der)
-write(11,*) epoch, mse
+write(*,*) epoch, mse
 
 ! Backward pass:
 doutput = mse_der

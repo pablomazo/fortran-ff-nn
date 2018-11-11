@@ -1,0 +1,8 @@
+output_values
+sal_evaluate
+mse
+NN_param
+*.inp
+*.dat
+*.x
+*.o

@@ -4,7 +4,7 @@ make
 
 # Train model
 ./generate_points.x < generate_train.inp
-./fit.x < points.dat
+./train.x < points.dat
 
 # Evaluate model on new set of points.
 ./generate_points.x < generate_eval.inp

@@ -1,12 +1,13 @@
 FC=gfortran
+FFLAGS=-O3
 
-all: fit evaluate generate
+all: train evaluate generate
 
-fit:fit.f90 routines.f90
-	$(FC) $^ -o fit.x
+train:train.f90 routines.f90
+	$(FC) $(FFLAGS) $^ -o train.x
 
 evaluate:evaluate.f90 routines.f90
-	$(FC) $^ -o evaluate.x
+	$(FC) $(FFLAGS) $^ -o evaluate.x
 
 generate:generate_points.f90
 	$(FC) $^ -o generate_points.x
