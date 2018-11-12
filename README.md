@@ -12,7 +12,7 @@ how backpropagation works.
 fit the NN weights and bias.
 - evaluate.f90: When "fit.f90" ends, a file named "NN_parameters" is created. This
 program loads this parameters and allows to evaluate the NN on any set of points.
-- routines.f90: Some subroutines that both "fit.f90" and "evaluate.f90" will use.
+- routines.f90: Some subroutines that both "train.f90" and "evaluate.f90" will use.
 - generate_points.f90: This program is specific for each application. Just generates the
 set of (input, target) points.
 - Makefile
