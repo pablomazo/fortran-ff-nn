@@ -25,7 +25,7 @@ of points you want to generate, maximum value of the input and minimum value of 
   100  10e0   5e-1
 > ./generate_points.x < generate_train.inp
 ```
-This exection will output a file named "points.dat" with the set of training points.
+This execution will output a file named "points.dat" with the set of training points.
 
 2. Execute "train.x":
 ```
