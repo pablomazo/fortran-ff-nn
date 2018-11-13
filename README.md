@@ -1,7 +1,7 @@
 # Feed Forward Neural Network
 
 Toy model of a feed forward NN coded in FORTRAN90.
-Its just a one hidden layer NN but can be rewritten to be N hidden layer (although I don't
+It's just a one hidden layer NN but can be rewritten to be N hidden layer (although I don't
 recommend it, it won't be practical).
 
 This project is thought as an excercise for further understanding of what a NN is  and
@@ -18,7 +18,7 @@ set of (input, target) points.
 - Makefile
 
 ## Execution:
-1. Use "generate_points.f90" with the function you want the NN. Input a file with 3 values (number
+1. Use "generate_points.f90" with the function you want the NN to fit. Input a file with 3 values (number
 of points you want to generate, maximum value of the input and minimum value of the input)
 ```
 > cat generate_train.inp
