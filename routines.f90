@@ -65,7 +65,7 @@ mse_der = 0d0
 
 do i=1,ndata
    mse_der(1,i) = output(1,i) - targ(1,i)
-   mse = mse + mse_der(i,1) * mse_der(i,1)
+   mse = mse + mse_der(1,i) * mse_der(1,i)
 enddo
 mse_der = mse_der / ndata
 mse = mse / ndata
